@@ -1,0 +1,523 @@
+*{
+	margin:0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+.header{
+	min-height: 109vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("Resources/Images/Index_Img/Background_Index.jpg");
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+nav{
+		display: flex;
+		padding: 2% 6%;
+		justify-content: space-between;
+		align-items: center;
+}
+nav img{
+	width: 150px;
+}
+.nav-links{
+	flex: 1;
+	text-align: right;
+}
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	positon: relative;
+}
+.nav-links ul li a{
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+}
+.nav-links ul li::after{
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: #f44336;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+	width: 100%;
+}
+.text{
+	width: 95%;
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+.text h1{
+	font-size: 62px;
+}
+.text p{
+		margin: 10px 0 40px;
+		font-size: 18px;
+		color: white;
+}
+.buton{
+	display: inline-block;
+	text-decoration: none;
+	color: red;
+	border: 1px solid white;
+	padding: 12px 34px;
+	font-size: 13px;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+}
+
+.buton:hover{
+	border: 1px solid darkred;
+	background: darkred;
+	transition: 1s;
+}
+
+
+/*-------MIRAGE --------*/
+
+.MIRAGEh{
+width: 80%;
+margin: auto;
+text-align: center;
+padding-top: 100px;	
+}
+
+.sites{
+	flex-basis: 31%;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	text-align: left;
+}
+
+.sites img{
+		width: 100%;
+		border-radius: 10px;
+}
+
+.sites p{
+	padding: 0;
+	text-align: left;
+}
+
+.sites h3{
+	margin-top: 16px;
+	margin-bottom: 15px;
+	text-align: left;
+}
+
+
+
+
+
+
+/*------footer------*/
+.footer{
+	width: 100%;
+	text-align: center;
+	padding: 30px 0;
+}
+
+.footer h4{
+	margin-bottom: 25px;
+	margin-top: 20px;
+	font-weight: 800;
+	font-size: 26px;
+}
+
+.icons .fa{
+	color: orange;
+	margin: 0 13px;
+	cursor: pointer;
+	padding: 18px 0;
+}
+
+.fa-heart-o{
+	color: red;
+}
+
+
+
+
+
+
+
+
+
+/*----------despre joc ---------------*/
+
+.sub-header{
+	height: 60vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0.3)), url("Resources/Images/Despre_Img/Background_Despre.jpg");	
+	text-align: center;
+	color: white;
+}
+
+.sub-header h1{
+	margin-top: 40px;
+	font-size: 70px;
+}
+
+
+
+
+
+
+/*-------despre joc --------*/
+.despre{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+
+h1{
+	font-size: 35px;
+	font-weight: 600;
+	text-shadow: 2px 2px #ff0000;
+}
+p{
+	color:;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 22px;
+	padding: 10px;
+}
+
+.impartire{
+	margin-top:5%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.coloane{
+		flex-basis: 31%;
+		background: #ff8080;
+		border-radius: 10px;
+		margin-bottom: 5%;
+		padding: 20px 12px;
+		box-sizing: border-box;
+		transition: 1s;
+}
+h3{
+	text-align: center;
+	font-weight: 600;
+	margin: 10px 0;
+}
+
+.coloane:hover{
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0.9);	
+}
+
+
+
+
+
+
+
+
+/*-------HARTI --------*/
+
+.sub-header-harti{
+	height: 73vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.80),rgba(4,9,30,0.80)), url("Resources/Images/Harti_Img/Background_Harti.jpg");	
+	background-position: center;
+	background-size: cover;
+	color: white;
+}
+
+.sub-header-harti h1{
+	margin-top: 50;
+	font-size: 140px;
+	color: white;
+	text-shadow: 4px 4px red;
+	text-align: left;
+	margin-left: 80;
+	background:rgba(255, 255, 255,0.2)
+}
+
+.Harti{
+width: 80%;
+margin: auto;
+text-align:center;
+padding-top: 50px;	
+}
+
+.coloaneharti{
+	flex-basis:32%;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+}
+
+.coloaneharti img{
+	width: 100%;
+}
+
+.mirage{
+	background: transparent;
+	height:100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: 1s;
+}
+
+.mirage:hover{
+		background: rgba(255, 153, 51,0.5);
+}
+
+.mirage h3{
+	width: 100%;
+	font-weight: 700;
+	color: white;
+	font-size: 26px;
+	bottom: 0;
+	position: absolute;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.mirage:hover h3{
+		bottom: 49%;
+		opacity: 1;
+}
+
+.dust{
+	background: transparent;
+	height:100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: 1s;
+}
+
+.dust:hover{
+		background: rgba(255, 255, 0,0.35);
+}
+
+.dust h3{
+	width: 100%;
+	font-weight: 700;
+	color: white;
+	font-size: 26px;
+	bottom: 0;
+	position: absolute;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.dust:hover h3{
+		bottom: 49%;
+		opacity: 1;
+}
+
+.inferno{
+	background: transparent;
+	height:100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: 1s;
+}
+
+.inferno:hover{
+		background: rgba(0, 102, 255,0.35);
+}
+
+.inferno h3{
+	width: 100%;
+	font-weight: 700;
+	color: white;
+	font-size: 26px;
+	bottom: 0;
+	position: absolute;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.inferno:hover h3{
+		bottom: 49%;
+		opacity: 1;
+}
+
+
+h5{
+	text-align: center;
+	font-weight: 1000;
+	font-size: 100;
+	margin-top: 50;
+	
+}
+
+
+
+
+/*-------MIRAGE --------*/
+
+.MIRAGEh{
+width: 80%;
+margin: auto;
+text-align: center;
+padding-top: 100px;	
+}
+
+.sites{
+	flex-basis: 31%;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	text-align: left;
+}
+
+.sites img{
+		width: 100%;
+		border-radius: 10px;
+}
+
+.sites p{
+	padding: 0;
+	text-align: left;
+}
+
+.sites h3{
+	margin-top: 16px;
+	margin-bottom: 15px;
+	text-align: left;
+}
+
+
+
+.sub-header-mirage{
+	height: 80vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.2),rgba(4,9,30,0.2)), url("Resources/Images/Mirage_Img/Mirage Map Guide.webp");	
+	background-position: absolute;
+	background-size: cover;
+	text-align: center;
+	color: white;
+}
+
+.sub-header-mirage h1{
+	margin-top: 0;
+	font-size: 120px;
+}
+
+
+
+
+/*----------DUST II----------*/
+
+.sub-header-dust{
+	height: 80vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.2),rgba(4,9,30,0.2)), url("Resources/Images/Dust_Img/Dust Map Guide.jpeg");	
+	background-position: absolute;
+	background-size: cover;
+	text-align: center;
+	color: white;
+}
+
+
+/*---------INFERNO-----------*/
+.sub-header-inferno{
+	height: 80vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.2),rgba(4,9,30,0.2)), url("Resources/Images/Inferno_Img/Inferno Map Guide.jpeg");	
+	background-position: absolute;
+	background-size: cover;
+	text-align: center;
+	color: white;
+}
+
+
+/*---------TRAIN-----------*/
+.sub-header-train{
+	height: 82vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.2),rgba(4,9,30,0.2)), url("Resources/Images/Train_Img/Train Map Guide.jpeg");	
+	background-position: absolute;
+	background-size: cover;
+	text-align: center;
+	color: white;
+}
+
+
+/*---------OVERPASS-----------*/
+.sub-header-overpass{
+	height: 80vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.2),rgba(4,9,30,0.2)), url("Resources/Images/Overpass_Img/Overpass Map Guide.jpeg");	
+	background-position: absolute;
+	background-size: cover;
+	text-align: center;
+	color: white;
+}
+
+
+
+/*---------VERTIGO-----------*/
+.sub-header-vertigo{
+	height: 82vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.2),rgba(4,9,30,0.2)), url("Resources/Images/Vertigo_Img/Vertigo Map Guide.webp");	
+	background-position: absolute;
+	background-size: cover;
+	text-align: center;
+	color: white;
+}
+
+
+
+h6{
+	font-size: 35px;
+	font-weight: 600;
+}
+
+
+
+/*--------INDICATII-----------*/
+.sub-header-indicatii{
+	height: 82vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.2),rgba(4,9,30,0.2)), url("Resources/Images/Indicatii_Img/Background_Indicatii.jpg");	
+	background-position: absolute;
+	background-size: cover;
+	text-align: center;
+	color: white;
+}
+
+.sub-header-indicatii h1{
+	font-weight: 700;
+	font-size: 90;
+	text-align: left;	
+	margin-top: 200px;
+	margin-left: 100px;
+	 text-shadow: 2px 2px #ff0000;
+}
+
+.sub-header-indicatii h1{
+	background: rgba(255, 255, 255,0.35);
+}
+
+
+.indicatii{
+	width: 60%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
